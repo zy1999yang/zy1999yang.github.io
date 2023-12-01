@@ -1,0 +1,14 @@
+.yuyue1{
+    height: 945px;
+    width: 800px;
+    background-color: aqua;
+}
+.yuyue1 p{
+    color: blueviolet;
+    font-size: 50px;
+    text-align: center;
+}
+
+.zuobian ul li{
+    font-size: 25px;
+}

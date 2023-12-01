@@ -1,0 +1,208 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 18px;
+    color: black;
+    font-family: "微软雅黑";
+    background: url(../images/Bgbody.jpg) repeat-x left top #f1f7f5;
+}
+
+img {
+    border: none;
+}
+
+ul,
+ol,
+dl,
+form {
+    padding: 0px;
+    margin: 0px;
+}
+
+input,
+select,
+font,
+em {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "微软雅黑";
+    color: #4c4c4c;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4c4c4c;
+    noline: expression(this.onFocus=this.blur());
+}
+
+a:focus {
+    outline: none;
+    -moz-outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:blue;
+}
+
+.clear {
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+}
+
+.space10 {
+    clear: both;
+    height: 10px;
+    overflow: hidden;
+}
+
+.space25 {
+    clear: both;
+    height: 25px;
+    overflow: hidden;
+}
+
+.space35 {
+    clear: both;
+    height: 35px;
+    overflow: hidden;
+}
+
+.Content {
+    width: 1002px;
+    margin: auto;
+    background: url(../images/BgContent.jpg) repeat-y left top;
+}
+
+.Content_home {
+    width: 1002px;
+    margin: auto;
+}
+
+.Sidebar {
+    width: 204px;
+    float: left;
+    padding: 0 11px;
+}
+
+.RightSidebar {
+    width: 735px;
+    float: right;
+    padding-right: 20px;
+}
+
+.mianContent {
+    line-height: 28px;
+    padding: 15px 0px;
+}
+
+.header {
+    width: 1002px;
+    height: 170px;
+    margin: auto;
+    position: relative;
+    z-index: 88;
+}
+
+.header .logo {
+    width: 441px;
+    height: 51px;
+    position: absolute;
+    left: 0px;
+    top: 51px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header .logo a {
+    display: block;
+    height: 51px;
+}
+
+.header .search {
+    width: 400px;
+    height: 32px;
+    font-size: 30px;
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    color: red;
+}
+
+.header .search .text {
+    position: absolute;
+    left: 15px;
+    width: 175px;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    background: none;
+}
+
+.header .search .btn {
+    width: 30px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    float: right;
+}
+
+.header .frCont {
+    height: 34px;
+    line-height: 30px;
+}
+
+.header .frCont a {
+    color: #fff;
+    padding: 0 15px;
+    display: inline-block;
+    height: 34px;
+}
+
+.header .frCont a:hover,
+.header .frCont a.acur {
+    background: url(../images/Top_bgAcur.jpg) no-repeat center top;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.header .frCont dl {
+    float: right;
+}
+
+/*界面布局*/
+
+.mainnav {
+    position: absolute;
+    right: 0px;
+    top: 130px;
+    width: 1002px;
+    height: 34px;
+    z-index: 1;
+}
+
+.mainnav ul li {
+    float: left;
+    font-size: 14px;
+    padding: 0 22px;
+}
+
+.mainnav ul li span a {
+    color: #6a6a6a;
+}
+
+.mainnav ul li span a:hover,
+.mainnav ul li.onnav a {
+    color:blue;
+    text-decoration: none;
+}
+

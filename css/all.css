@@ -1,0 +1,772 @@
+@charset "utf-8";
+
+/* 全文布局（公用） */
+/* Full text layout */
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 18px;
+    color: black;
+    font-family: "微软雅黑";
+    background: url(../images/Bgbody.jpg) repeat-x left top #f1f7f5;
+}
+/* 图片 */
+img {
+    border: none;
+}
+/* 列表（list） */
+ul,
+ol,
+dl,
+form {
+    padding: 0px;
+    margin: 0px;
+}
+/* 输入 */
+input,
+select,
+font,
+em {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "微软雅黑";
+    color: #4c4c4c;
+}
+/* 取消列表前缀黑点 */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4c4c4c;
+}
+
+a:focus {
+    outline: none;
+    -moz-outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:blue;
+}
+
+.clear {
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+}
+
+.space10 {
+    clear: both;
+    height: 10px;
+    overflow: hidden;
+}
+
+.space25 {
+    clear: both;
+    height: 25px;
+    overflow: hidden;
+}
+
+.space35 {
+    clear: both;
+    height: 35px;
+    overflow: hidden;
+}
+/* 除了主页以外的分页面使用（开始） */
+.Content {
+    width: 1002px;
+    margin: auto;
+    background: url(../images/BgContent.jpg) repeat-y left top;
+}
+
+.Content_home {
+    width: 1002px;
+    margin: auto;
+}
+
+.Sidebar {
+    width: 204px;
+    float: left;
+    padding: 0 11px;
+}
+
+.RightSidebar {
+    width: 735px;
+    float: right;
+    padding-right: 20px;
+}
+
+.mianContent {
+    line-height: 28px;
+    padding: 15px 0px;
+}
+/* 除了主页以外的分页面使用（结束） */
+/* 头部内容（公用） */
+.header {
+    width: 1002px;
+    height: 170px;
+    margin: auto;
+    position: relative;
+    z-index: 88;
+}
+
+.header .logo {
+    width: 441px;
+    height: 51px;
+    position: absolute;
+    left: 0px;
+    top: 51px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header .logo a {
+    display: block;
+    height: 51px;
+}
+
+.header .search {
+    width: 400px;
+    height: 32px;
+    font-size: 30px;
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    color: red;
+}
+
+.header .search .text {
+    position: absolute;
+    left: 15px;
+    width: 175px;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    background: none;
+}
+
+.header .search .btn {
+    width: 30px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    float: right;
+}
+
+.header .frCont {
+    height: 34px;
+    line-height: 30px;
+}
+
+.header .frCont a {
+    color: #fff;
+    padding: 0 15px;
+    display: inline-block;
+    height: 34px;
+}
+
+.header .frCont a:hover,
+.header .frCont a.acur {
+    background: url(../images/Top_bgAcur.jpg) no-repeat center top;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.header .frCont dl {
+    float: right;
+}
+
+/*选项（主页，科室介绍等按钮）布局*/
+/*Option settings*/
+.mainnav {
+    position: absolute;
+    right: 0px;
+    top: 130px;
+    width: 1002px;
+    height: 34px;
+    z-index: 1;
+}
+
+.mainnav ul li {
+    float: left;
+    font-size: 14px;
+    padding: 0 22px;
+}
+
+.mainnav ul li span a {
+    color: #6a6a6a;
+}
+
+.mainnav ul li span a:hover,
+.mainnav ul li.onnav a {
+    color:blue;
+    text-decoration: none;
+}
+/*公共布局结束*/
+/*End of public layout*/
+
+
+/*index的布局*/
+.H_ban {
+    height: 435px;
+    position: relative;
+}
+
+.H_ban .ban {
+    height: 412px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.H_ban .ban li {
+    height: 412px;
+}
+
+.H_ban .ban li a {
+    display: block;
+    height: 412px;
+}
+
+.H_ban .bd {
+    width: 1002px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.H_ban .bd ul {
+    position: absolute;
+    top: -412px;
+    right: 0px;
+    width: 260px;
+}
+
+.H_ban .bd ul li {
+    width: 260px;
+    height: 103px;
+    cursor: pointer;
+    overflow: hidden;
+    float: left;
+}
+
+.H_sections {
+    width: 600px;
+    height: 263px;
+    float: left;
+    overflow: hidden;
+    background: white;
+}
+
+.H_sections h4 {
+    margin: 0 15px;
+}
+
+.H_sections ul {
+    padding-top: 15px;
+}
+
+.H_sections ul li {
+    float: left;
+
+    height: 35px;
+    line-height: 10px;
+    padding: 0 60px;
+    width: 180px;
+}
+
+.H_sections ul li.End {
+    background: none;
+}
+
+.H_guide {
+    width: 380px;
+    height: 263px;
+    float: right;
+    overflow: hidden;
+    background: #FFF;
+}
+
+.H_guide h4 {
+    margin: 0 15px;
+}
+
+.H_guide ul {
+    padding-top: 10px;
+}
+
+.H_guide ul li {
+    float: left;
+    font-size: 13px;
+    width: 300px;
+    height: 20px;
+    padding: 15px 5px 5px 5px;
+}
+
+.H_expert {
+    height: 234px;
+    overflow: hidden;
+    position: relative;
+    background: url(../images/H_expertBg.jpg) no-repeat left top;
+    padding: 0 15px;
+}
+
+.H_expert .box {
+    width: 900px;
+    height: 135px;
+    overflow: hidden;
+    position: absolute;
+    left: 55px;
+    top: 75px;
+}
+
+.H_expert .box li {
+    width: 145px;
+    height: 130px;
+    position: relative;
+    padding-left: 155px;
+    float: left;
+    overflow: hidden;
+}
+
+.H_expert .box li .bg {
+    position: absolute;
+    left: 0px;
+    z-index: 2;
+    width: 123px;
+    height: 120px;
+
+}
+
+.H_expert .box li .bg a {
+    display: block;
+    height: 100px;
+}
+
+.H_expert .box li .pic {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+}
+
+.H_expert .box li .pic img {
+    width: 123px;
+    height: 120px;
+}
+
+.H_expert .box li dl {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.H_expert .box li dl em {
+    font-weight: bold;
+    color: #38957d;
+    font-size: 14px;
+}
+
+.H_expert .hd a {
+    display: block;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 120px;
+    cursor: pointer;
+}
+
+.H_expert .hd a.prev {
+    left: 15px;
+}
+
+.H_expert .hd a.next {
+    right: 15px;
+}
+
+.H_title {
+    padding: 10px 0 0;
+    margin: 0;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: solid 2px #e6e6e6;
+    position: relative;
+    font-size: 16px;
+}
+
+.H_title a.more {
+    display: block;
+    float: right;
+    width: 32px;
+    height: 36px;
+}
+
+.H_title b {
+    display: inline-block;
+    height: 36px;
+    border-bottom: solid 2px #c2d94e;
+    background: url(../images/H_h4Line.jpg) no-repeat left center;
+    padding-left: 10px;
+    color: blue;
+}
+
+.H_title02 {
+    padding: 10px 0 0;
+    margin: 0;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: solid 2px #e6e6e6;
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+}
+
+.H_title02 a.more {
+    display: block;
+    float: right;
+    width: 32px;
+    height: 36px;
+}
+
+.H_title02 b {
+    display: inline-block;
+    height: 36px;
+    border-bottom: solid 2px #c2d94e;
+    color:blue;
+}
+
+.H_party {
+    width: 295px;
+    height: 310px;
+    float: left;
+    overflow: hidden;
+    background: #FFF;
+    padding: 0 15px;
+}
+
+.H_party dl {
+    display: block;
+    padding: 8px 0 15px;
+}
+
+.H_party dl img {
+    width: 295px;
+    height: 86px;
+}
+
+.H_party ul li {
+    background: url(../images/Icon_dot.jpg) no-repeat 5px center;
+    padding-left: 15px;
+    line-height: 26px;
+}
+
+.H_party ul li a {
+    color: #666;
+}
+
+.H_lead {
+    width: 295px;
+    height: 310px;
+    float: left;
+    overflow: hidden;
+    background: #FFF;
+    padding: 0 15px;
+    margin-left: 15px;
+}
+
+.H_lead dl {
+    display: block;
+    padding: 8px 0 15px;
+}
+
+.H_lead dl img {
+    width: 295px;
+    height: 86px;
+}
+
+.H_lead ul li {
+    background: url(../images/Icon_dot.jpg) no-repeat 5px center;
+    padding-left: 15px;
+    line-height: 26px;
+}
+
+.H_lead ul li a {
+    color: #666;
+}
+
+.H_interact {
+    width: 295px;
+    height: 310px;
+    float: right;
+    overflow: hidden;
+    background: #FFF;
+    padding: 0 15px;
+}
+
+.H_interact dl {
+    display: block;
+    padding: 8px 0 15px;
+}
+
+.H_interact dl img {
+    width: 295px;
+    height: 86px;
+}
+
+.H_interact ul li {
+    background: url(../images/Icon_dot.jpg) no-repeat 5px center;
+    padding-left: 15px;
+    line-height: 26px;
+}
+
+.H_interact ul li a {
+    color: #666;
+}
+/*index的布局结束*/
+/*about、guide、h、j、speciallist、speciallistExperts的公共布局*/
+/*about、guide、h、j、speciallist、speciallistExperts的public layout*/
+.H193 {
+    width: 1000px;
+    height: 193px;
+    position: relative;
+    margin: auto;
+}
+
+.H193 .leftBg {
+    position: absolute;
+    left: -30px;
+    top: 193px;
+    width: 30px;
+    height: 150px;
+    background: url(../images/BgLeft.png) no-repeat left top;
+}
+
+.H193 .rightBg {
+    position: absolute;
+    right: -30px;
+    top: 193px;
+    width: 30px;
+    height: 150px;
+    background: url(../images/BgRight.png) no-repeat left top;
+}
+
+.Menu h4 {
+    padding: 20px 0 0 63px;
+    margin: 15px 0 0 0;
+    height: 45px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #fff;
+    
+    letter-spacing: 2px;
+}
+
+.Menu h4 span {
+    display: block;
+    font-size: 12px;
+    color: #c3e9d6;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.Menu ul {
+    margin-bottom: 10px;
+}
+
+.Menu ul li {
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    padding-top: 5px;
+    letter-spacing: 2px;
+}
+
+.Menu ul li a {
+    display: block;
+    padding-left: 50px;
+    background: url(../images/Icon_menu.png) no-repeat 22px center #eaf6f3;
+    color: #656565;
+}
+
+.Menu ul li a:hover,
+.Menu ul li.acur a {
+    color: #656565;
+    text-decoration: none;
+    background: url(../images/Icon_menu.png) no-repeat 22px center #fff;
+}
+
+.Sub {
+    background: #fff;
+    height: 100%;
+    margin: 0 0 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: red;
+}
+
+.Current {
+    padding-top: 15px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: solid 2px #f5f5f5;
+}
+
+.Current h1 {
+    padding: 0 11px;
+    margin: 0;
+    color: #3fa895;
+    display: block;
+    font-size: 16px;
+    background: url(../images/Current_bg.jpg) no-repeat left center;
+}
+
+.Current dl {
+    float: right;
+    color: #737373;
+    padding-right: 5px;
+}
+
+.Current dl a {
+    color: #737373;
+}
+
+.Current dl span {
+    color: #339785;
+}
+/*about、guide、h、j、speciallist、speciallistExperts的公共布局结束*/
+/*about、guide、h、j、speciallist、speciallistExperts的public layout*/
+/*speciallist的布局*/
+.Specialist li {
+    padding-bottom: 25px;
+}
+
+.Specialist li h4 {
+    padding: 0 10px;
+    margin: 0;
+    height: 32px;
+    line-height: 32px;
+    background: #eaf6f3;
+    font-size: 14px;
+}
+
+.Specialist li dl {
+    padding: 10px 0;
+    display: block;
+}
+
+.Specialist li dl a {
+    display: inline-block;
+    border-bottom: dotted 1px #d7d7d7;
+    width: 173px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    float: left;
+    padding-left: 100px;
+}
+
+.Specialist li.Frist h4 {
+    background: #68c780;
+    color: #FFF;
+}
+/*speciallist的布局结束*/
+/*speciallistExperts的布局*/
+.Experts_list li {
+    width: 190px;
+    height: 140px;
+    position: relative;
+    padding-left: 155px;
+    float: left;
+    overflow: hidden;
+    margin: 10px 0 10px 0;
+    border-bottom: solid 1px #eee;
+}
+
+.Experts_list li .bg {
+    position: absolute;
+    left: 0px;
+    z-index: 2;
+    width: 123px;
+    height: 120px;
+    background: url(../images/H_expertLibg.png) no-repeat left top;
+}
+
+.Experts_list li .bg a {
+    display: block;
+    height: 120px;
+}
+
+.Experts_list li .pic {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+}
+
+.Experts_list li .pic img {
+    width: 123px;
+    height: 120px;
+}
+
+.Experts_list li dl {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.Experts_list li dl em {
+    font-weight: bold;
+    color: #38957d;
+    font-size: 14px;
+}
+
+.Experts_list li.End {
+    float: right;
+}
+/*speciallistExperts的布局结束*/
+/*公用结尾*/
+/*common ending*/
+.Footer {
+    background: url(../images/Footer_bg.jpg) repeat-x left top;
+    font-family: "宋体";
+}
+
+.Footer .box {
+    width: 1002px;
+    height: 127px;
+    margin: auto;
+    text-align: center;
+    color: black
+}
+
+.Footer .box h5 {
+    padding: 13px 0 0 0px;
+    margin: 0;
+    font-size: 11px;
+    font-weight: normal;
+    color: black
+}
+
+.Footer .box h5 a {
+    padding: 0 10px 0 7px;
+    color: black;
+    font-size:12px;
+}
+
+.Footer .box dl {
+    display: block;
+    padding: 2px 0 0 0px;
+    color: black
+}
+
+.Footer .box dl a {
+    color: black
+}
+
+.Footer .box .txt {
+    padding-top: 20px;
+}
+/*公用结尾结束*/
